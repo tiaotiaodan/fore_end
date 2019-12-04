@@ -6,14 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        .jianlin{
+        .yase{
+            /* 类选择器权重要高于标签选择器 */
+            color: green;
+        }
+        div{
             color: red;
+            /* 权重   0,0,0,1 */
+
         }
     </style>
 </head>
 <body>
-    <div class="jianlin"> 
-        <p>王思聪</p>
-    </div>
+    <div class="yase">亚瑟</div>
 </body>
 </html>
