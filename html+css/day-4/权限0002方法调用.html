@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div p {
+            color: red;
+            /* 0001 + 0001 = 0002 */
+        }
+
+        p {
+            color: green;
+            /* 0001 */
+        }
+        .feng{
+            color: hotpink;
+            /* 0010  内选择器，是0010优先大于0001 */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="feng">老虎</p>
+    </div>    
+</body>
+</html>
