@@ -1,0 +1,51 @@
+/*
+@Author: shichao
+@Date:  2020-02-26
+*/
+/*  先删除默认的内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;  /*取消li 的小点*/
+}
+
+body {
+    background-color: #fafafa;
+}
+.header {
+    height: 100px;
+    background-color: #ffffff;
+}
+.inner {
+    width: 1200px;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 0px auto;
+    
+}
+.logo {
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.nav li {
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.nav li a {
+    color: #333;
+    text-decoration: none;   /*取消下划线*/
+}
+
+.nav li a:hover {
+    color: #2288f6;
+}
+
