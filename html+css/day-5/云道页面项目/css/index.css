@@ -95,6 +95,8 @@ body {
 }
 .service_bd li img {
     margin: 40px 35px;
+    width: 255px;
+    height: 155px;
 }
 
 .service_bd li h3 {
