@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none; 
+        }
+        .taobao {
+            width: 520px;
+            height: 280px;
+            background-color: chartreuse;
+            margin: 100px auto;
+            position: relative;
+        }
+        .taobao a{
+            width: 24px;
+            height: 36px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -18px;
+        }
+        .left {
+            left: 0;
+            background: url("img/left.png") no-repeat;
+            
+        }
+        .right {
+            right: 0;
+            background: url("img/right.png") no-repeat;
+        }
+        .taobao ul {
+            width: 70px;
+            height: 13px;
+            background: rgba(255,255,255,0.3);    /*设置半透明*/
+            position: absolute;
+            bottom: 10px;    /*设置底部便宜量10px*/
+            left: 50%;      /*水平走父容器的一半（50%） */
+            margin-left: -35px;   /*走自己容器宽度的一半（50%）*/
+            border-radius: 5px;   /*设置直角，变圆角*/
+        }
+        .taobao ul li {
+            width: 8px;
+            height: 8px;
+            background-color: #ffffff;
+            float: left;
+            border-radius: 50%;    /*正方形取50%，为圆形*/
+            margin: 3px;
+        }
+        .taobao ul .two {
+            background-color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <div class="taobao">
+        <img src="img/taobao.jpg" alt="">
+        <a href="#" class="left"></a>
+        <a href="#" class="right"></a>
+        <ul>
+            <li class="two"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
