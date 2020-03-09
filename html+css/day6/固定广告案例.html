@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            height: 44px;
+            background: url("img/top.png") no-repeat top center;
+            position: fixed;   /*设置为固定定位后，背景图片没有空间距，box会向上移动，导致重叠，我们需要把box上边距预留和header一样的高度*/
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .box {
+            width: 1002px;
+            height: 1760px;
+            margin: 44px auto 0;
+        }
+        .ad-l, .ad-r {
+            position: absolute;
+            top: 100px;
+        }
+        .ad-r {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img/ad-l.png" alt="" height="288" width="120" class="ad-l">
+        <img src="img/ad-r.png" alt="" height="288" width="120" class="ad-r">
+    </div>
+    <div class="header"></div>
+    <div class="box">
+        <img src="img/box.png" alt="" height="1760" width="1002">
+    </div>
+</body>
+</html>
