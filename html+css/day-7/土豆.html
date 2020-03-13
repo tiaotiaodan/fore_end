@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            display: block;
+            width: 448px;
+            height: 252px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        
+        a .mask {
+            width: 100%;
+            height: 100%;
+            background:rgba(0,0,0, 20%) url("img/arr.png") no-repeat;
+            background-position: center;
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+
+        /* mask什么时候出来  鼠标放到 a 身上，然后a里面的 mask 显示出来， 后代选择器 */
+        a:hover .mask{
+            display: block;    /*显示出来*/
+        }
+    </style>
+</head>
+<body>
+    <a href="#">
+        <img src="img/tudou.jpg" alt="" height="252" width="448">
+        <div class="mask"></div>
+    </a>
+</body>
+</html>
