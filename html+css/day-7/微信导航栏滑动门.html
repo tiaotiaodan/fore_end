@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信导航栏</title>
+    <style>
+        body {
+            background: url("img/wx.jpg") repeat-x;
+        }
+
+        li {
+            list-style: none;
+        }
+        .nav a {
+            height: 33px;
+            display: inline-block;
+            background: url("img/to.png") no-repeat;
+            color: #fff;
+            text-decoration: none;
+            line-height: 33px;
+            padding-left: 15px;
+        }
+        .nav span {
+            background: url("img/to.png") no-repeat right;
+            display: inline-block;
+            height: 33px;
+            padding-right: 15px;
+        }
+        .nav a:hover, .nav a:hover span {
+            background-image: url("img/ao.png");
+        }
+        .nav li {
+            float: left;
+
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="">
+                <span>首页</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span>新闻</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span>关于</span>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
